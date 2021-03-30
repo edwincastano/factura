@@ -17,7 +17,10 @@
             <td>{{ autor.id }}</td>
             <td>{{ autor.cliente }}</td>
             <td>{{ autor.direccion }}</td>
+            <td>{{ autor.articulo }}</td>
             <td>{{ autor.cantidad }}</td>
+            <td>{{ autor.valor unitario }}</td>
+            <td>{{ autor.valor total }}</td>
             <td><a href="{% url 'edit_autor' autor.id %}">Editar</a> <a href="{% url 'delete_autor' autor.id %}">Borrar</a></td>
         </tr>
         {% endfor %}
